@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  background-image: url('images.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+  <title>Car Price Prediction</title>
+  
+  
+</head>
+<body>
+
+  <h1 style="color:Black">Used Car Price Prediction</h1>
+  
+
+    <!-- User Input Form-->
+    <form action="/" method="POST">
+        <div class="form-group">
+		<label style="color:Black">Registration Year:</label> &nbsp &nbsp &nbsp
+		<input type="text" name="Registration year" size="15" value="2015"/><br>
+		<br>
+		<label style="color:Black">Registration Month:</label>&nbsp &nbsp &nbsp <select id="Registration Month" name="Registration Month">
+                <option value="Jan">January</option>
+                <option value="Feb">Febuary</option>
+				<option value="Mar">March</option>
+				<option value="Apr">April</option>
+				<option value="May">May</option>
+				<option value="Jun">June</option>
+				<option value="Jul">July</option>
+				<option value="Aug">August</option>
+				<option value="Sep">September</option>
+				<option value="Oct">October</option>
+				<option value="Nov">November</option>
+				<option value="Dec">December</option>
+				
+            </select><br>
+			<br>
+			<label style="color:Black">Power of car in PS:</label> &nbsp &nbsp &nbsp
+		<input type="text" name="Power of car in PS" size="15" value="234"/>
+		<br><br>
+		<label style="color:Black">Kilometers the car has driven:</label> &nbsp &nbsp &nbsp
+		<input type="text" name="Power of car in PS" size="15" value="38593"/><br>
+		<br>
+		<label style="color:Black">Gear Box Type:</label> 
+		<input type="radio" id="manual" name="fav_language" value="Manual">
+        <label for="manual">Manual</label>
+        <input type="radio" id="automatic" name="fav_language" value="Automatic">
+        <label for="automatic">Automatic</label>
+        <input type="radio" id="notdeclared" name="fav_language" value="notdeclared">
+        <label for="notdeclared">Not declared</label><br><br>
+	  <label style="color:Black">Your car is damaged or repaired:</label> 
+		<input type="radio" id="yes" name="fav" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="fav" value="no">
+        <label for="automatic">No</label>
+        <input type="radio" id="notdeclared" name="fav" value="notdeclared">
+        <label for="notdeclared">Not declared</label>
+	  <br><br>
+		<label style="color:Black">Model Type:</label>&nbsp &nbsp &nbsp <select id="Model Type" name="Model Type">
+                <option value="coupe">coupe</option>
+                <option value="suv">suv</option>
+				<option value="kleinwage">kleinwage</option>
+				<option value="limousine">limousine</option>
+				<option value="cabrio">cabrio</option>
+				<option value="kombi">kombi</option>
+				<option value="bus">bus</option>
+				
+				
+            </select><br><br>
+			<label style="color:Black">Brand of the car:</label>&nbsp &nbsp &nbsp <select id="Model Type" name="Model Type">
+                <option value="volkswagen">volkswagen</option>
+                <option value="audi">audi</option>
+				<option value="jeep">jeep</option>
+				<option value="skoda">skoda</option>
+				<option value="bmw">bmw</option>
+				<option value="peugeot">peugeot</option>
+				<option value="mercedes">mercedes</option>
+				<option value="ford">opel</option>
+				<option value="ford">hyundai</option>
+				<option value="ford">citroen</option>
+				
+				
+				
+            </select><br><br>
+			<label style="color:Black">Fuel Type of the car:</label>&nbsp &nbsp &nbsp <select id="Model Type" name="Model Type">
+                <option value="benzin">benzin</option>
+                <option value="lpg">lpg</option>
+				<option value="diesel">diesel</option>
+			 </select><br><br>
+			 
+			 <label style="color:Black"> Vehicle Type:</label>&nbsp &nbsp &nbsp <select id="Model Type" name="Model Type">
+                <option value="bus">bus</option>
+                <option value="car">car</option>
+			 </select><br><br>
+		
+		     <input type="button" value="PREDICT">
+    </form>
+</div>
+
+<!-- After Prediction -->
+
+<div class="container">
+  <h2></h2>
+  <div class="alert alert-info" role="alert">
+    <strong></strong> Pridicted price of your car is : {{output}}
+  </div>
+</div>
+
+
+  
+</body>
+</html>
